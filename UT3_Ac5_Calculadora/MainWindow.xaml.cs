@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows;
 
 
 namespace UT3_Ac5_Calculadora
@@ -17,9 +13,5 @@ namespace UT3_Ac5_Calculadora
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            textoSalidaTextBlock.Text += (sender as Button).Tag.ToString();
-        }
     }
 }

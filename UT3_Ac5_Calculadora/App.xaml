@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:UT3_Ac5_Calculadora"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="5" />
+            <EventSetter Event="Click"
+                         Handler="Button_Click" />
+        </Style>
     </Application.Resources>
 </Application>
