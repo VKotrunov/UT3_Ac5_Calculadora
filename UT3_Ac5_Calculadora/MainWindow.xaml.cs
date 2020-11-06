@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-
+using System.Windows.Controls;
 
 namespace UT3_Ac5_Calculadora
 {
@@ -12,6 +12,9 @@ namespace UT3_Ac5_Calculadora
         {
             InitializeComponent();
         }
-
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textoSalidaTextBlock.Text += (sender as Button).Tag.ToString();
+        }
     }
 }
